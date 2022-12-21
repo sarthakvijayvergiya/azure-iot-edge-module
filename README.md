@@ -1,6 +1,6 @@
 # Cookiecutter Template for Azure IoT Edge Python Module
 
-`cookiecutter-azure-iot-edge-module` creates a base template to start a new Azure IoT Edge Python module
+`azure-iot-edge-module` creates a base template to start a new Azure IoT Edge Python module
 
 ## Prerequisites
 Install [Cookiecutter](https://github.com/audreyr/cookiecutter):
