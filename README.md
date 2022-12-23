@@ -5,7 +5,9 @@
 ## Prerequisites
 Install [Cookiecutter](https://github.com/audreyr/cookiecutter):
 ```
-$ pip install -U cookiecutter
+$ python3 -m venv venv
+$ source venv/Scripts/activate
+$ pip install cookiecutter
 ```
 
 ## Usage

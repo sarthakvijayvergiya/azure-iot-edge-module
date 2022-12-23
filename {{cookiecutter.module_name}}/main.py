@@ -31,9 +31,15 @@ def create_client():
             print("forwarding mesage to output1")
             await client.send_message_to_output(message, "output1")
 
+        # Define function for handling received twin patches
+    async def receive_twin_patch_handler(twin_patch):
+        logging.info(f"Twin Patch received")
+        logging.info(f"{twin_patch}")
+
     try:
         # Set handler on the client
         client.on_message_received = receive_message_handler
+        client.on_twin_desired_properties_patch_received = receive_twin_patch_handler
     except:
         # Cleanup if failure occurs
         client.shutdown()
